@@ -270,7 +270,7 @@ header .top-line {
 }
 
 
-.arrow {
+.arrows {
     display: flex;
     justify-content: center;
     gap: 30px;

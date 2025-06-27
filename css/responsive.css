@@ -80,6 +80,9 @@
  .num{
     padding-inline: 30px;
  }
+ .People-card{
+    grid-template-columns: 1fr 1fr;
+ }
 }
 @media (max-width:768px){
     .container {
@@ -130,7 +133,6 @@
         display: grid;
         grid-template-columns: 1fr;
         margin-inline: 20px;
-
      }
 .testimonial {
     display: grid;
