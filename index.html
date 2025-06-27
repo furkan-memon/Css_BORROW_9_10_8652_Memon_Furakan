@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BORROW</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -41,42 +42,51 @@
         </div>
         <div class="nav-link">
           <ul>
-            <li>Home <i class="fa-solid fa-chevron-down"></i></li>
-            <li>Products <i class="fa-solid fa-chevron-down"></i></li>
-            <li>Blog <i class="fa-solid fa-chevron-down"></i></li>
-            <li>Features <i class="fa-solid fa-chevron-down"></i></li>
-            <li>Docs</li>
-            <li><button>Buy Now</button></li>
+            <li class="nav-items">
+              <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+              <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+              <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+              <a href="#"> Features <i class="fa-solid fa-chevron-down"></i></a>
+              <a href="#"> Docs</a>
+              <a href="#"><button>Buy Now</button></a>
+            </li>
+            <a href="/" class="bars">
+              <li><i class="fa-solid fa-bars" style="color: #624bff;"></i></li>
+            </a>
           </ul>
         </div>
       </div>
 
     </div>
   </section>
-  <section class="hero-section">
-    <div class="img">
+<section class="hero-section">
+     <div class="img">
+      <div class="container">
       <div class="hero-text">
         <div class="hero-text2">
-          <h2>Personal Loan to Suit Your Needs.</h2>
-          <p>
+          <h1>Personal Loan to Suit Your Needs.</h1>
+          <p class="per">
             The low rate you need for the need you want! Call
           </p>
           <p>
             (555) 123-4567
           </p>
-          <button>Loan Products</button>
+          <a href="#" class="btn">
+          Loan Products
+          </a>
         </div>
       </div>
-
+      
+     
     </div>
     </div>
-    </div>
-    </div>
+   
+    
   </section>
   <section class="pro-loan">
-    <div class="container">
+    <div class="container card">
       <div class="home-lone">
-        <div class="hero-bottam">
+        <div class="hero-bottam" style="border: none;">
           <img src="./assets/home.svg">
           <div class="img-text">
             <h2>3.74%</h2>
@@ -119,38 +129,38 @@
           </p>
         </div>
         <div class="loan-card">
-          <div class="loancard">
+          <div class="loancard card-1">
             <img src="./assets/loan.svg">
             <h3>Business Loan</h3>
             <p>Dolor sit nean commodo ligula eget dolor simple dummyum sociis nat nsectetuer adipiscing elit.</p>
             <a href="">Read More</a>
           </div>
-          <div class="loancard">
+          <div class="loancard card-2">
             <img src="./assets/car.svg">
             <h3>Car Loan</h3>
             <p>Aenean commodo ligula eget dolor. Cum sociis ipsum dolor sit amet, consectetuer adipiscing elit.</p>
             <a href="">Read More</a>
           </div>
-          <div class="loancard">
+          <div class="loancard card-3">
             <img src="./assets/piggy-bank.svg">
             <h3>Education Loan</h3>
             <p>Consectetuer adipiscing elmodo ligula eget dolor ociis natoque sit amet le polo konsog.</p>
             <a href="">Read More</a>
           </div>
         </div>
-        <div class="arrow" >
-         <a href="!" style="text-decoration: none;">
-           <i class="fa-solid fa-arrow-left"></i>
-         </a>
-         <a href="!" style="text-decoration: none;">
-       <i class="fa-solid fa-arrow-right"></i>
-         </a>
-         
+        <div class="arrows">
+          <a href="!" style="text-decoration: none;">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <a href="!" style="text-decoration: none;">
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
         </div>
       </div>
     </div>
   </section>
-  <section class="application-section">
+   <section class="application-section">
     <div class="container">
       <div>
         <div class="application-text">
@@ -163,21 +173,26 @@
         <div class="application-card">
           <div class="applicationcard">
             <span>1</span>
-            <h3>Choose Loan Amount</h3>
-            <p>Suspendisse accumsan imperdue ligula dignissim sit amet vestibulum in mollis etfelis.</p>
-            <a href="">Read More</a>
+            <div class="application-text-card">
+              <h3>Choose Loan Amount</h3>
+              <p>Suspendisse accumsan imperdue ligula dignissim sit amet vestibulum in mollis etfelis.</p>
+            </div>
+          
           </div>
           <div class="applicationcard">
             <span>2</span>
+            <div class="application-text-card">
+
             <h3>Approved Your Loan</h3>
             <p>Fusce tempor sstibulum varius sem nec mi luctus viverra edcongue lobortis faucibus.</p>
-            <a href="">Read More</a>
+            </div>
           </div>
           <div class="applicationcard">
             <span>3</span>
+            <div class="application-text-card">
             <h3>Get Your Cash</h3>
             <p>Get your money in minutes simtibulm varius semnec mluctus gue lobortis faucibus.</p>
-            <a href="">Read More</a>
+            </div>
           </div>
         </div>
         <div class="card-btn">
@@ -187,10 +202,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> 
   <section class="Peoplesection">
     <div class="container">
-      <div>
+      <!-- <div> -->
         <div class="People-text">
           <h2>Why People Choose Us</h2>
           <p>
@@ -247,7 +262,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> 
   <section class="testimonial-section">
     <div class="container">
       <div class="section-title">
@@ -257,7 +272,7 @@
         </p>
       </div>
 
-      <div class="testimonial-grid">
+      <div class="testimonial">
 
         <div class="user-data">
           <div class="testimonial-card">
@@ -319,34 +334,34 @@
     </div>
   </section>
   <section class="pro-loan">
-    <div class="container">
-      <div class="home-lone">
-        <div class="hero-bottam">
-          <img src="./assets/logo-1.jpg">
+    <div class="container gr-cen">
+      <div class="home-lone gr">
+        <div class="hero-bottam pl-border">
+          <img src="./assets/logo-1.jpg" width="100px">
         </div>
-        <div class="hero-bottam">
-          <img src="assets/logo-2.jpg">
+        <div class="hero-bottam pl-border">
+          <img src="assets/logo-2.jpg" width="100px">
 
         </div>
-        <div class="hero-bottam">
-          <img src="./assets/logo-3.jpg">
+        <div class="hero-bottam pl-border">
+          <img src="./assets/logo-3.jpg" width="100px">
 
         </div>
-        <div class="hero-bottam">
-          <img src="./assets/logo-4.jpg">
+        <div class="hero-bottam pl-border">
+          <img src="./assets/logo-4.jpg" width="100px">
 
         </div>
-        <div class="hero-bottam">
-          <img src="./assets/logo-5.jpg">
+        <div class="hero-bottam pl-border">
+          <img src="./assets/logo-5.jpg" width="100px">
         </div>
-        <div class="hero-bottam">
-          <img src="./assets/logo-1.jpg">
+        <div class="hero-bottam pl-border">
+          <img src="./assets/logo-1.jpg" width="100px">
 
         </div>
       </div>
     </div>
-  </section>
-  <section class="Companysection">
+  </section> 
+   <section class="Companysection">
     <div class="container">
       <div>
         <div class="Company-text">
@@ -423,8 +438,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="help-section">
+  </section> 
+ <section class="help-section">
     <div class="container">
       <h2 class="help-text">We are Here to Help You</h2>
       <p class="help-text1">
@@ -481,14 +496,17 @@
       </div>
     </div>
   </section>
-  <footer>
+   <footer>
     <div class="container">
       <div class="footer">
-        <img src="./assets/ft-logo.png">
+        <img src="./assets/ft-logo.png" >
         <div class="footer-t">
-          <h3>Signup Our Newsletter</h3>
+          <div >
+
+            <h3>Signup Our Newsletter</h3>
+          </div>
           <div class="input-section">
-            <input type="email" placeholder="Write email address">
+            <input type="email" placeholder="Write email address" class="email">
             <a href="#">
               Go! 
             </a>
@@ -510,30 +528,38 @@
             <div class="num"><i class="fa-solid fa-phone"></i>800-123-456</div>
           </div>
         </div>
+        
         <div class="links">
-          <div class="link">
-           
-               <ul>
-              <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Home</a></a> </li>
-              <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Services</a></li>
-              <li><a href="#"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
-              <li><a href="#"><i class="fa-solid fa-chevron-right"></i>News</a></li>
-              <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Faq</a></li>
-              <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
-            </ul>
-           
-          </div>
-          <div class="loans">
-             <ul>
-              <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Car Loan</a></li>
-              <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Personal Loan</a></li>
-              <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Education Loan</a></li>
-              <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Business Loan</a></li>
-              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Home Loan</a></li>
-              <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Debt Consolidation</a></li>
+          
 
-            </ul>
-          </div>
+            <div class="link">
+             
+                 <ul>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Home</a></a> </li>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Services</a></li>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>News</a></li>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Faq</a></li>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
+              </ul>
+             
+            </div>
+   
+         
+
+            <div class="loans">
+               <ul>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Car Loan</a></li>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Personal Loan</a></li>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Education Loan</a></li>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Business Loan</a></li>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Home Loan</a></li>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Debt Consolidation</a></li>
+  
+              </ul>
+            
+</div>
+        
           <div class="social">
             <ul>
               <li><a href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a></li>
@@ -542,7 +568,9 @@
               <li><a href="#"><i class="fa-brands fa-linkedin"></i>Linked In</a></li>
             </ul>
           </div>
-        </div>
+          </div>
+       
+      
       </div>
       <div class="Copyright-section">
         <div class="cs-left">
